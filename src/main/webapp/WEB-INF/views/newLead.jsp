@@ -54,6 +54,10 @@
 		</tr>
 	</table>
 	</form>
+	<br>
+	${msg}
+	<br>
 </div>
+<br>
 </body>
 </html>
