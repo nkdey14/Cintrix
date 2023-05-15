@@ -55,8 +55,7 @@
 	</table>
 	</form>
 	<br>
-	${msg}
-	<br>
+	<a href="listAllLeads"><input type="button" value="Back"></a>
 </div>
 <br>
 </body>
