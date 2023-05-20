@@ -5,47 +5,47 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Lead Details</title>
+<title>Contact Details</title>
 </head>
 <body>
 <div align="center">
 	<br>
 	${msg}
 	<br><br>
-	<h2>Lead Details</h2><br>
+	<h2>Contact Details</h2><br>
 	
 	<table border='1' cellspacing='1' cellpadding='8'>
 		<tr>
 			<th>First Name</th>
-			<td>${lead.firstName}</td>
+			<td>${contact.firstName}</td>
 		</tr>
 		<tr>
 			<th>Last Name</th>
-			<td>${lead.lastName}</td>
+			<td>${contact.lastName}</td>
 		</tr>
 		<tr>
 			<th>Gender</th>
-			<td>${lead.gender}</td>
+			<td>${contact.gender}</td>
 		</tr>
 		<tr>
 			<th>Email Id</th>
-			<td>${lead.email}</td>
+			<td>${contact.email}</td>
 		</tr>
 		<tr>
 			<th>Mob no.</th>
-			<td>${lead.mobile}</td>
+			<td>${contact.mobile}</td>
 		</tr>
 		<tr>
 			<th>City</th>
-			<td>${lead.city}</td>
+			<td>${contact.city}</td>
 		</tr>
 		<tr>
 			<th>Source</th>
-			<td>${lead.source}</td>
+			<td>${contact.source}</td>
 		</tr>
 	</table>
 	<br>
-	<a href="listAllLeads"><input type="button" value="Back"></a>
+	<a href="listAllContacts"><input type="button" value="Back"></a>
 </div>
 <br>
 </body>

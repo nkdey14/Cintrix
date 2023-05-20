@@ -28,7 +28,6 @@ public class LeadServiceImpl implements LeadService {
 		List<Lead> leads = leadRepo.findAll();
 		
 		return leads;
-		
 	}
 
 	@Override
@@ -37,7 +36,12 @@ public class LeadServiceImpl implements LeadService {
 		Lead lead = leadRepo.findById(id).get();
 		
 		return lead;
+	}
+
+	@Override
+	public void deleteLead(long id) {
 		
+		leadRepo.deleteById(id);
 	}
 	
 	

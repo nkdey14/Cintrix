@@ -12,4 +12,6 @@ public interface LeadService {
 
 	Lead findLeadById(long id);
 
+	void deleteLead(long id);
+
 }
