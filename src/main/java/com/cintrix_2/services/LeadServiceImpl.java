@@ -43,6 +43,11 @@ public class LeadServiceImpl implements LeadService {
 		
 		leadRepo.deleteById(id);
 	}
-	
-	
+
+	@Override
+	public Lead findLeadByMobile(long mobile) {
+		
+		Lead lead = leadRepo.findByMobile(mobile);
+		return lead;
+	}
 }

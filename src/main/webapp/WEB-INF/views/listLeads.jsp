@@ -17,6 +17,7 @@
 	<br><br>
 	
 	<a href="viewNewLeadPage"><input type="button" value="New Lead"></a>
+	<a href="showSearchLeadPage"><input type="button" value="Search"></a>
 	
 	<br><br>
 	

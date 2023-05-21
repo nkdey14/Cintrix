@@ -117,7 +117,7 @@ public class LeadController {
 		c.setFirstName(lead.getFirstName());
 		c.setLastName(lead.getLastName());
 		c.setGender(lead.getGender());
-		c.setEmail(lead.getGender());
+		c.setEmail(lead.getEmail());
 		c.setMobile(lead.getMobile());
 		c.setCity(lead.getCity());
 		c.setSource(lead.getSource());
@@ -133,5 +133,30 @@ public class LeadController {
 		model.addAttribute("msg", "Contact saved successfully!");
 		
 		return "listContacts";
+	}
+	
+	@GetMapping("/showSearchLeadPage")
+	public String viewSearchLead() {
+		
+		return "searchLead";
+	}
+	
+	@PostMapping("/fetchLeadDetails")
+	public String showLeadDetails(@RequestParam("mobile") long mobile, Model model) {
+		
+		Lead lead = leadService.findLeadByMobile(mobile);
+		
+		if(lead != null) {
+			
+			model.addAttribute("lead", lead);
+			
+			return "leadInfo";
+			
+		} else {
+			
+			model.addAttribute("msg", "No Record Found!");
+			
+			return "searchLead";
+		}
 	}
 }

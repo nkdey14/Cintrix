@@ -40,8 +40,8 @@
 			<td>${contact.mobile}</td>
 			<td>${contact.city}</td>
 			<td>${contact.source}</td>
-			<td><a href="editLead?id=${contact.id}"><input type="button" value="Edit"></a></td>
-			<td><a href="removeLead?id=${contact.id}"><input type="button" value="Remove"></a></td>
+			<td><a href="editContact?id=${contact.id}"><input type="button" value="Edit"></a></td>
+			<td><a href="removeContact?id=${contact.id}"><input type="button" value="Remove"></a></td>
 			<td><a href="sendEmail?email=${contact.email}"><input type="button" value="Send Email"></a></td>
 		</tr>
 		

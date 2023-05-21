@@ -6,4 +6,6 @@ import com.cintrix_2.entities.Lead;
 
 public interface LeadRepository extends JpaRepository<Lead, Long> {
 
+	Lead findByMobile(long mobile);
+
 }

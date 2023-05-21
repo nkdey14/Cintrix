@@ -14,4 +14,6 @@ public interface LeadService {
 
 	void deleteLead(long id);
 
+	Lead findLeadByMobile(long mobile);
+
 }

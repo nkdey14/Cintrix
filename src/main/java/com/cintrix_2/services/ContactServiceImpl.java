@@ -35,6 +35,12 @@ public class ContactServiceImpl implements ContactService {
 		Contact contact = contactRepo.findById(id).get();
 		return contact;
 	}
+
+	@Override
+	public void deleteContact(long id) {
+		
+		contactRepo.deleteById(id);
+	}
 	
 	
 }

@@ -12,4 +12,6 @@ public interface ContactService {
 
 	Contact findContactById(long id);
 
+	void deleteContact(long id);
+
 }
